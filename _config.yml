@@ -1,8 +1,8 @@
 # Setup
-title: Noir
-tagline: a dark mode friendly Jekyll theme
+title: Headphone One
+tagline: an attempt at linking every headphone resource
 url: https://noir.essentialenemy.com
-paginate: 1
+paginate: 30
 baseurl: ""
 permalink: :title/
 
