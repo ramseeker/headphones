@@ -1,7 +1,7 @@
 # Setup
 title: Headphone One
 tagline: an attempt at linking every headphone resource
-url: https://noir.essentialenemy.com
+url: https://headphone.one
 paginate: 30
 baseurl: ""
 permalink: :title/
@@ -37,11 +37,5 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Victor Johnson
-  url: https://twitter.com/essentialenemy
-  email: me@essentialenemy.com
-
-# Custom vars
-version: 1.3.0
-github:
-  repo: https://github.com/essentialenemy/noir
+  name: Jim Fitzsimmons
+  url: https://twitter.com/tidyhusband
