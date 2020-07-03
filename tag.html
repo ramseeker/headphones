@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1>{{ site.data.tags[ page.tag ].name }}</h1>
+
+{% if site.tags[ page.tag ] %}
+  {% for post in site.tags[ page.tag ] %}
+  <a href="{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+  </a>
+  {% endfor %}
+{% else %}
+  <p>There are no posts for this tag.</p>
+{% endif %}
