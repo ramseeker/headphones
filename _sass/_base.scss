@@ -100,3 +100,23 @@ tbody tr:nth-child(odd) th {
   background-color: #2d2d2d;
   }
 }
+
+.button {
+  background-color:#ff0066;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:0.5em;
+
+}
+
+.button2 {font-size: 12px;}
+.button3 {font-size: 16px;}
+.button4 {font-size: 20px;}
+.button5 {font-size: 24px;}

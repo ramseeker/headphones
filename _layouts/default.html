@@ -13,7 +13,8 @@ layout: compress
 	  
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a><br>
-          <small> One Site. {{ site.posts | size }} headphone links. Not enough money to buy it all. </small>
+          <small> I write stuff about my stuff.<small>
+           <a href="/about/">what's this?</a></small>  {{ site.posts | size }} items far
         </h3>
 		
 		<!-- Change navigation links here -->
@@ -25,20 +26,13 @@ layout: compress
         {{ content | smartify }}
       </main>
 
-      <footer class="footer">
-       
+      <footer class="footer" >
+      <small style="color:#737373"> Amazon Disclaimer: As an Amazon Associate I earn from qualifying purchases.<BR>
+     FTC Disclosure: I get commissions for purchases made through links in this post.
+ </small>
+
       </footer>
     </div>
 
-    {% if site.ga_analytics %}
-     <script>
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-       ga('create', '{{ site.ga_analytics }}', 'auto');
-       ga('send', 'pageview');
-     </script>
-    {% endif %}
   </body>
 </html>

@@ -1,8 +1,8 @@
 # Setup
-title: Headphone One
-tagline: an attempt at linking every headphone resource
-url: https://headphone.one
-paginate: 30
+title: Stuff Writer
+tagline: I have a lot of stuff.
+url: https://stuffwriter.com
+paginate: 10
 baseurl: ""
 permalink: :title/
 

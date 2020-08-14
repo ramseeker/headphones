@@ -11,6 +11,10 @@ layout: default
 <h1 class="post-title">{{ page.title | smartify }}</h1>
   {% endif %}
   
+    <div style="float:left;width: 100px; margin-right: 30px;"><a href="{{ page.link }}"><img src="{{ page.image }}"><button class="button button2">Check Price</button></a>
+
+</div>
+  
   <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_long_string: "ordinal", "US" }}
   {% if post %}
   {% assign categories = post.categories %}
@@ -26,6 +30,7 @@ layout: default
   {%- endif -%}
   </time>{% if page.link %}<span class="external-link">External Link</span>{% endif %}
   
+
   {{ content | smartify }}
   
   <br>
