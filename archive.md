@@ -1,23 +1,7 @@
 ---
-layout: page
+layout: default
 ---
-
-<div>
-{% assign categories_sorted = site.categories | sort %}
-{% for category in categories_sorted %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-	
-    <div id="#{{ category_name | slugize }}"></div>
-
-    <h3 class="category-head"><small>{{ category_name }}</small></h3>
-    <a name="{{ category_name | slugize }}"></a>
-
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <a href="{{ post.url }}">{{ post.title }}{% if post.url %}{% endif %}</a>
-    </article>
-    {% endfor %}
-  </div>
+ 
+{% for post in site.posts %}
+ [ {{ post.title }} ]({{ post.link }})
 {% endfor %}
-</div>
