@@ -1,17 +1,32 @@
----
-layout: compress
----
+
 <!doctype html>
 <html lang="en">
 
-  {% include head.html %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }}{% if site.tagline %} &middot; {{ site.tagline }}{% endif %}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+
+
+</head>
   <body>
 
     <div class="container content">
       <header class="masthead">
 	  
-		Hello! I am <b><a href="http://stuffwriter.com">Jim</a></b> and I am writing about all the stuff I have. So far I have written about  <a href="/archive"> {{ site.posts | size }} items so far</a>. You can read more about this project <a href="/about"> here </a>
+		Hello! I am <b><a href="http://stuffwriter.com">Jim</a></b> and I am writing about all the stuff I have. So far I have written about  <a href="/archive"> {{ site.posts | size }} items</a>. You can read more about this project <a href="/about"> here </a>
 		
 	
 		<!-- Change navigation links here -->

@@ -6,14 +6,23 @@ paginate: 10
 baseurl: ""
 permalink: :title/
 
+
++ markdown: CommonMark
++ commonmark:
++   options: ["SMART", "FOOTNOTES"]
++   extensions: ["strikethrough", "autolink", "table"]
+
 kramdown:
     footnote_backlink: "&#10548;"
-
+exclude:
+  - .jekyll-cache
+  
 # Gems
 plugins:
-  - jekyll-gist
   - jekyll-paginate
-  - jekyll-seo-tag
+  - jekyll-commonmark
+  - jekyll-include-cache
+
 
 # Optimize Jekyll
 exclude:
@@ -24,6 +33,9 @@ exclude:
   - Gemfile.lock
   - LICENSE.md
   - README.md
+
+keep_files: [assets]
+
 
 sass:
   sass_dir: _sass
