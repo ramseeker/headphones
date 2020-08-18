@@ -3,5 +3,5 @@ layout: default
 ---
  
 {% for post in site.posts %}
- [ {{ post.title }} ]({{ post.link }})
+ [ {{ post.title }} ]({{ post.url }}) <span class="link-arrow">   &rarr;</span>
 {% endfor %}
